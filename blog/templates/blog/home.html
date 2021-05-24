@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<link rel="stylesheet" href="{% static 'styles/style.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<script src="{% static 'js/script.js' %}"></script>
+<title>Portfolio</title>
+</head>
+<div class="sidenav" id="sidenav">
+    <a href ="javascript:void(0)" class="close" onclick="closeNav()">&#9776;</a>
+    <a href="#">Home</a>
+    <a href="#">Resume</a>
+    <a href="#">Contact</a>
+    <a href="#">About</a>
+</div>
+<div class="main" id="main">
+<body>
+<span class ="open" onclick="openNav()">&#9776</span>
+<img src="{% static 'images/PicsArt_12-23-11.18.05.jpg' %}" alt="Photo Of Harshdeep">
+
+<div class="Welcome" id="Welcome">
+    <p>
+    Hello and Welcome to my Page<br/>I am Harshdeep!!
+    </p>
+</div>
+
+
+<div class="About" id="About">
+    <h2>About Me</h2>
+    <p>
+    I am Harshdeep Sahu, currently an undergrad at IIT Guwahati doing my Majors in Civil
+    Engineering. I am an enthusiast Software Developer looking forward to having more 
+    oppurtinities in the IT sector and proving my worth.
+    </p>
+</div>
+
+<div class="Skills" id="Skills">
+    <h2>Skills</h2>
+    <h5>Languages</h5>
+    <p>C++</br>Python</p>
+    <h5>Frontend</h5>
+    <p>Html</br>CSS</p>
+    <h5>Backend</h5>
+    <p>Django</br>Node.js</p>
+    <h5>Creativity </h5>
+    <p>Guitar</br>Dance</br>Content Writing</p>
+</div>
+
+<div class="Contact" id="Contact">
+    <h2>Contact</h2>
+    <p>
+    Phone : +91805836****</br>
+    Email : harshdeepsah5@gmail.com
+    </p>
+</div>
+
+</body>
+</div>
+
+
