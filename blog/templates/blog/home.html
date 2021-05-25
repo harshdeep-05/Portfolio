@@ -3,6 +3,8 @@
 <html lang="en">
 <head>
 <link href="{% static 'styles/style.css' %}" rel="stylesheet">
+<link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <script src="{% static 'js/script.js' %}"></script>
@@ -11,9 +13,9 @@
 <div class="sidenav" id="sidenav">
     <a href ="javascript:void(0)" class="close" onclick="closeNav()">&#9776;</a>
     <a href="#">Home</a>
-    <a href="#">Resume</a>
-    <a href="#">Contact</a>
     <a href="#">About</a>
+    <a href="blog\templates\blog\Blog.html">Blog</a>
+    <a href="blog\templates\blog\Contact.html">Contact</a>
 </div>
 <div class="main" id="main">
 <body>
@@ -21,9 +23,7 @@
 <img src="{% static 'images/PicsArt_12-23-11.18.05.jpg' %}" alt="Photo Of Harshdeep">
 
 <div class="Welcome" id="Welcome">
-    <p>
-    Hello and Welcome to my Page<br/>I am Harshdeep!!
-    </p>
+    <p>Harshdeep Sahu<p>
 </div>
 
 
@@ -47,13 +47,14 @@
     {% endfor %}
 </div>
 
-<div class="Contact" id="Contact">
-    <h2>Contact</h2>
-    <p>
-    Phone : +91805836****</br>
-    Email : harshdeepsah5u@gmail.com
-    </p>
-</div>
+<footer>
+    <p> Harshdeep -> 
+    <a href="mailto:hege@example.com">harshdeepsahu5@gmail.com</a></p>
+    <a href="https://www.facebook.com/VasuHDS/" class="fa fa-facebook"></a>
+    <a href="https://www.instagram.com/harshdeep__123/" class="fa fa-instagram"></a>
+    <a href="https://www.linkedin.com/in/harshdeep-sahu-10a64b1a0/" class="fa fa-linkedin"></a>
+</footer>
+
 
 </body>
 </div>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<link href="{% static 'styles/blog.css' %}" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<script src="{% static 'js/script.js' %}"></script>
+<title>Portfolio</title>
+</head>
+
+<div class="sidenav" id="sidenav">
+    <a href ="javascript:void(0)" class="close" onclick="closeNav()">&#9776;</a>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="blog\templates\blog\Blog.html">Blog</a>
+    <a href="blog\templates\blog\Contact.html">Contact</a>
+</div>

@@ -6,12 +6,12 @@ def home(request):
 
     skill1=Skills()
     skill1.type = 'Languages'
-    skill1.name = 'C++'
+    skill1.name = 'C++' 'Python'
     skill1.level = 4
 
     skill2=Skills()
     skill2.type = 'Frontend'
-    skill2.name = ['Html','CSS']
+    skill2.name = 'Html' 'CSS'
     skill2.level = 3
 
     skill3=Skills()
@@ -21,7 +21,7 @@ def home(request):
 
     skill4=Skills()
     skill4.type = 'Creative'
-    skill4.name = 'Guitar'
+    skill4.name = 'Guitar' 'Dance'
     skill4.level = 5
 
     skills= [skill1,skill2,skill3,skill4]
