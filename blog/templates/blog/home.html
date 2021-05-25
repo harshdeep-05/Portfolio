@@ -2,7 +2,7 @@
 {% load static %}
 <html lang="en">
 <head>
-<link rel="stylesheet" href="{% static 'styles/style.css' %}">
+<link src="{% static 'styles/style.css' %}" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <script src="{% static 'js/script.js' %}"></script>
@@ -38,14 +38,14 @@
 
 <div class="Skills" id="Skills">
     <h2>Skills</h2>
-    <h5>Languages</h5>
-    <p>C++</br>Python</p>
-    <h5>Frontend</h5>
-    <p>Html</br>CSS</p>
-    <h5>Backend</h5>
-    <p>Django</br>Node.js</p>
-    <h5>Creativity </h5>
-    <p>Guitar</br>Dance</br>Content Writing</p>
+
+    {% for skill in skills %}
+   
+    <h5>{{skill.type}}</h5>
+    <p>{{skill.name}}
+    </p>
+
+    {% endfor %}
 </div>
 
 <div class="Contact" id="Contact">

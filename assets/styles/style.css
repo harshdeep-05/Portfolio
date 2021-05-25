@@ -94,4 +94,12 @@ img{
     padding: 20px;
 }
 
+.skill.level {
+        height: 25px;
+        width: 25px;
+        background-color: rgb(5, 5, 5);
+        border-radius: 50%;
+        display: inline-block;
+}
+
 
