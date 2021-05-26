@@ -21,7 +21,6 @@
 <body>
 <span class ="open" onclick="openNav()">&#9776</span>
 <img src="{% static 'images/PicsArt_12-23-11.18.05.jpg' %}" alt="Photo Of Harshdeep">
-
 <div class="Welcome" id="Welcome">
     <p>Harshdeep Sahu<p>
 </div>
@@ -43,17 +42,20 @@
    
     <h5>{{skill.type}}</h5>
     <p>{{skill.name}}</p>
-
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
     {% endfor %}
 </div>
 
-<footer>
+<div class ="footer">
     <p> Harshdeep -> 
     <a href="mailto:hege@example.com">harshdeepsahu5@gmail.com</a></p>
     <a href="https://www.facebook.com/VasuHDS/" class="fa fa-facebook"></a>
     <a href="https://www.instagram.com/harshdeep__123/" class="fa fa-instagram"></a>
     <a href="https://www.linkedin.com/in/harshdeep-sahu-10a64b1a0/" class="fa fa-linkedin"></a>
 </footer>
+
 
 
 </body>
