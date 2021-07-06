@@ -2,7 +2,7 @@
 {% load static %}
 <html lang="en">
 <head>
-<link href="{% static 'styles/style.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'styles/style.css' %}">
 <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +12,10 @@
 </head>
 <div class="sidenav" id="sidenav">
     <a href ="javascript:void(0)" class="close" onclick="closeNav()">&#9776;</a>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="blog\templates\blog\Blog.html">Blog</a>
-    <a href="blog\templates\blog\Contact.html">Contact</a>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="">About</a>
+    <a href="{% url 'blog' %}">Blog</a>
+    <a href="">Contact</a>
 </div>
 <div class="main" id="main">
 <body>
@@ -38,14 +38,21 @@
 <div class="Skills" id="Skills">
     <h2>Skills</h2>
 
-    {% for skill in skills %}
+    <h5>Languages</h5>
+    <p>C++</p>
+    <p>Python</p>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+
+    <h5>Web Technologies</h5>
+    <p>HTML,CSS</p>
+    <p>Django</p>
+
+    <h5>Other</h5>
+    <p>Guitar</p>
+    <p>Dance</p>
    
-    <h5>{{skill.type}}</h5>
-    <p>{{skill.name}}</p>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    {% endfor %}
 </div>
 
 <div class ="footer">
